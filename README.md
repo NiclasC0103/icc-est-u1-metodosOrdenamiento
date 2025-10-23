@@ -15,3 +15,12 @@ Salida de Python
 
 Salida de Java
 ![alt text](assets/sortSelectionJava.png)
+
+### Practica 3 - 23/OCT
+Metodo Sort Insertion en Java y Python
+
+Salida de Python
+![alt text](assets/sortInsertionPy.png)
+
+Salida de Java
+![alt text](assets/sortInsertionJava.png)
