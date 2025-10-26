@@ -89,6 +89,19 @@ public class SortInsercion {
         }
     }
 
+    public static void sortPersonasByName(Persona[] personas) {
+        int len = personas.length;
+        for (int i = 1; i < len; i++) {
+            Persona aux = personas[i];
+            int j = i - 1;
+            while (j >= 0 && aux.getName().compareToIgnoreCase(personas[j].getName()) < 0) {
+                personas[j + 1] = personas[j];
+                j--;
+            }
+            personas[j + 1] = aux;
+        }
+    }
+
     public void printArray(int[] numeros){
         int len = numeros.length;
         for(int i=0; i<len; i++)
@@ -117,16 +130,15 @@ public class SortInsercion {
         }
     }
 
-    public static void printArrayPersonas(Persona[] personas){
+    public static void printArrayPersonas(Persona[] personas) {
         int len = personas.length;
-        for(int i=0; i<len; i++)
-        {
-            if (i==0) {
-                System.out.print("["+personas[i].getName()+",");
-            } else if(i==len-1) {
-                System.out.println(personas[i].getName()+"]");
+        for (int i = 0; i < len; i++) {
+            if (i == 0) {
+                System.out.print("[" + personas[i].getName() + "(" + personas[i].getAge() + "),");
+            } else if (i == len - 1) {
+                System.out.println(personas[i].getName() + "(" + personas[i].getAge() + ")]");
             } else {
-                System.out.print(personas[i].getName()+",");
+                System.out.print(personas[i].getName() + "(" + personas[i].getAge() + "),");
             }
         }
     }

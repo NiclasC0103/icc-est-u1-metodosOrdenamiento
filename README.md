@@ -24,3 +24,10 @@ Salida de Python
 
 Salida de Java
 ![alt text](assets/sortInsertionJava.png)
+
+Arreglo de Enteros, Cadenas y Arreglos
+![alt text](assets/Int.png)
+![alt text](assets/cad.png)
+![alt text](assets/pA.png)
+![alt text](assets/pN.png)
+

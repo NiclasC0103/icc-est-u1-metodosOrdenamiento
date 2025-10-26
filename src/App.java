@@ -60,10 +60,22 @@ public class App {
             new Persona("Ana", 25),
             new Persona("Maria", 28),
         };
+
         System.out.println("Array de Personas:");
         SortInsercion.printArrayPersonas(personas);
+
         SortInsercion.sortPersonasByAge(personas);
+
         System.out.println("Array de Personas Ordenado por edad:");
         SortInsercion.printArrayPersonas(personas);
+
+        System.out.println("Array de Personas:");
+        SortInsercion.printArrayPersonas(personas);
+        
+        SortInsercion.sortPersonasByName(personas);
+
+        System.out.println("Array de Personas Ordenado por nombre:");
+        SortInsercion.printArrayPersonas(personas);
+
     }
 }
